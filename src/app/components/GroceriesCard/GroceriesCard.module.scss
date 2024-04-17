@@ -1,0 +1,40 @@
+.GroceriesCard {
+	border-radius: 10px;
+	width: 220px;
+
+	.Content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 10px 15px;
+		gap: 10px;
+
+		.Text {
+			font-weight: 700;
+			font-size: 15pt;
+		}
+
+		.PriceBlock {
+			.Price{
+				font-weight: 500;
+				font-size: 15pt;
+			}
+
+			.Kg {
+				color: #8A8A94;
+			}
+		}
+
+		.CardButton {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 10px 0;
+			border-radius: 10px;
+			width: 100%;
+			cursor: pointer;
+		}
+	}
+}

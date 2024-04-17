@@ -1,0 +1,41 @@
+.Categories {
+	.Content {
+		.Up {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 10px;
+
+			.Text {
+				font-size: 13pt;
+				font-weight: 600;
+				color: white;
+			}
+
+			.seeAll {
+				color: #8A8A94;
+			}
+		}
+
+		.Buttons {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 20px;
+		}
+	}
+}
+
+@media (max-width: 450px) {
+	.Categories {
+		.Content{
+			.Up {
+				flex-direction: column;
+			}
+
+			.Buttons {
+				flex-direction: column;
+			}
+		}
+	}
+}
