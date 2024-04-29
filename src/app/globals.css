@@ -8,3 +8,10 @@
 html {
 	background: #3B3B51;
 }
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}

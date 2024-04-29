@@ -14,6 +14,12 @@
 
 			.seeAll {
 				color: #8A8A94;
+				cursor: pointer;
+				transition: 150ms;
+
+				&:hover {
+					color: rgb(195, 70, 70);
+				}
 			}
 		}
 

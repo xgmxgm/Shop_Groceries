@@ -1,0 +1,105 @@
+.Buy {
+	margin-bottom: 100px;
+
+	.Content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		.Title {
+			color: white;
+			margin-bottom: 20px;
+			margin-top: 20px;
+		}
+
+		.BuyButtonDiv {
+			margin: 20px;
+
+			.BuyButton {
+				cursor: pointer;
+				padding: 20px 100px;
+				background: linear-gradient(0deg, rgba(241,112,108,1) 0%, rgba(254,135,131,1) 100%);
+				color: white;
+				border-radius: 100px;
+				font-size: 14pt;
+				font-weight: 600;
+				transition: 300ms;
+
+				&:hover {
+					box-shadow: 0 0 20px 0 rgba(241,112,108,0.5);
+					text-shadow: 0 0 2px white;
+				}
+
+				@media (max-width: 350px) {
+					padding: 20px 70px;
+					font-size: 12pt;
+				}
+			}
+		}
+
+		.Groceries {
+			max-width: 600px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 25px;
+
+			.EmptyCart {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				height: 45vh;
+
+				.Title {
+					font-size: 15pt;
+					font-weight: 600;
+				}
+			}
+		}
+
+		.Modal {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 101vh;
+			background-color: rgba(0, 0, 0, 0.7);
+			z-index: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.ContentModal {
+				background-color: white;
+				padding: 20px;
+				border-radius: 20px;
+				z-index: 11;
+				text-align: center;
+
+				.Text {
+					margin: 10px 0;
+				}
+
+				.BuyButton {
+					cursor: pointer;
+					margin-top: 10px;
+					padding: 10px 40px;
+					background: linear-gradient(0deg, rgba(241,112,108,1) 0%, rgba(254,135,131,1) 100%);
+					color: white;
+					border-radius: 100px;
+					font-size: 13pt;
+					font-weight: 600;
+					transition: 300ms;
+	
+					&:hover {
+						box-shadow: 0 0 20px 0 rgba(241,112,108,0.5);
+						text-shadow: 0 0 2px white;
+					}
+				}
+			}
+		}
+	}
+}

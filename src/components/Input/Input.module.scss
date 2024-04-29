@@ -1,0 +1,31 @@
+.Input {
+	font-size: 13pt;
+	padding: 12px 30px;
+	border-radius: 5px;
+	margin: 5px 0;
+	width: 100%;
+}
+
+.ButtonSearch {
+	cursor: pointer;
+	margin: 10px 0;
+	font-size: 13pt;
+	font-weight: 600;
+	padding: 15px 30px;
+	border-radius: 100px;
+	background:  #F87E79;
+	color: white;
+	transition: 200ms;
+
+	&:hover {
+		background:  white;
+		color: #F87E79;
+		text-shadow: 0 0 10px rgb(181, 83, 83);
+	}
+}
+
+@media (max-width: 400px) {
+	.Input {
+		width: 200px;
+	}
+}
